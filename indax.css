@@ -1,0 +1,27 @@
+.header {
+    margin-top: 20px;
+    text-align: center;
+    color: tomato;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    background-attachment: fixed;
+    display: block;
+    background-color: rgb(248, 202, 116);
+    padding: 30px;
+}
+
+.body {
+    background-attachment: fixed;
+    background-image: url("img1.jpg");
+    background-color: #cccccc;
+    font-family: cursive;
+}
+
+#inside {
+    align-content: center;
+}
+
+.block {
+    width: 40%;
+    padding: 5%;
+}

@@ -1,0 +1,77 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title>Register here</title>
+        <link rel="Stylesheet" href="indax.css">
+        <script src="indax.js"></script>
+    </head>
+
+    <body class="body">
+        <header class="header">
+            <h3>Registration Form</h3>
+        </header>
+        <div>
+            <center class="block">
+                <h4>With proper validations</h4>
+                <br><br>
+                <div id="inside">
+                    <form action="welcome.html">
+                        <div>Personal details section</div>
+                        <p>
+                            <br><input id="firstname" placeholder="First Name" type="text" name="fullName" onkeyup = "myFirstName()">
+                            <br><label id="l-fname1" style="color: crimson; visibility: hidden; font-size: 10px; text-align: left">This field takes only alphabets a-z, A-Z</label>
+                        </p><br>
+
+                        <p>   
+                            <br><input id="lastname" placeholder="Last Name" type="text" name="fullName" onkeyup = "myLastName()">
+                            <br><label id="l-lname1" style="color: crimson; visibility: hidden; font-size: 10px;">This field takes only alphabets a-z, A-Z</label>
+                        </p><br>
+
+                        <p>
+                            <br><input id="emailAddress" placeholder="e-mail" type="text" name="emailAddress" onkeyup = "myEmail()">
+                            <br><label id="l-email1" style="color: crimson; visibility: hidden; font-size: 10px">please enter a valid e-mail ID. eg - example@xyz.com</label>
+                        </p><br>
+
+                        <p>
+                            <br><input id="mobileNumber" placeholder="Mobile Number" name="mobileNumber" onkeyup = "myMob()">
+                            <br><label id="l-mob1" style="color: crimson; visibility: hidden; font-size: 10px">This field takes only numbers 0-9</label>
+                        </p><br>
+
+                        <p>
+                            <br><input id="address" placeholder="Address" type="text" name="Address" onkeyup = "myAddress()">
+                            <br><label id="l-add1" style="color: crimson; visibility: hidden; font-size: 10px">only a-z A-Z 0-9 \ s , " '- are accepted</label>
+                        </p><br>
+
+                        <p>Gender<br>
+                            <input id="gmale" type="radio" name="gender">Male
+                            <input id="gfemale" type="radio" name="gender">Female
+                            <input id="gothers" type="radio" name="gender">Others
+                            <br>
+                            <label id="l-gen" style="color: crimson; visibility: hidden; font-size: 10px;">Please select one of the choice</label>
+                        </p><br>
+                        
+                        <p>Select Country
+                            <select name="state" id="countySel" size="1" onclick="myDown()">
+                                <option value="0" selected="selected">Select Country</option>
+                            </select>
+                        </p><br>
+                        
+                        <p>Select State
+                            <select name="countya" id="stateSel" size="1">
+                                <option value="" selected="selected">Please select Country first</option>
+                            </select>
+                        </p><br>
+                        
+                        <p>Select District
+                            <select name="district" id="districtSel" size="1">
+                                <option value="Please select State first" selected="selected">Please select State first</option>
+                            </select>
+                        </p><br>
+
+                        <button type="button" onclick="validateForm(this.form)">Submit</button>
+                    </form>
+                </center>
+            </div>
+        </div>
+    </body>
+</html>
